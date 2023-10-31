@@ -6,32 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Days gone</title>
     <link rel="stylesheet" href="style.css">
-    
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
 
     <header class="hero">
-        
-        
         <img src="./img/daysgone-logo2.webp" alt="">
         <img src="./img/Days-Gone-PNG-Image.png" alt="">
-
     </header>
 
-    
-        
+    <!-- Main Nav -->
+    <nav class="main-nav">
+        <a href="#">Inicio</a>
+        <a href="#">Resumen del juego</a>
+        <a href="#">Guia de supervivencia</a>
+        <a href="#">Guía del final del juego</a>
+    </nav>
 
-        <nav class="main-nav">
-            <a href="#">Inicio</a>
-            <a href="#">Resumen del juego</a>
-            <a href="#">Guia de supervivencia</a>
-            <a href="#">Guía del final del juego</a>
-        </nav>
-    
+    <!-- Swipper img -->
 
-   
+    <section class="gallery">
 
+
+        <!-- Slider main container -->
+        <div class="mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/swipper1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper2.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper4.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper5.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper6.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper7.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper8.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper9.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/swipper10.webp" alt="">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </section>
+
+    <section class="prueba"></section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 90,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>

@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     & a {
         font-size: 20px;
         color: whitesmoke;
@@ -45,24 +45,52 @@
     position: relative;
     width: 100%;
     height: 700px;
-    
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/daysgone-landscape.jpg');
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/daysgone-landscape.jpg');
     /* background-attachment: fixed; */
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
     & img {
         width: 900px;
-       /*  position: absolute;
-        top: 20px;
-        right: -100px; */
     }
 }
 
 
+/* Swipper */
 
+.gallery {    
+    height: 500px;
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/swipper5.webp');
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.mySwiper {
+    width: 700px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
