@@ -1,6 +1,6 @@
-# daysgone-web
+# Days Gone Web
 
-# Colección de cartas animadas
+
 ![img/daysgoneweb.png](img/daysgoneweb.png)
 
 
