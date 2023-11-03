@@ -6,6 +6,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .logo {
@@ -169,7 +170,7 @@ html {
     height: 300px;
     position: relative;
     overflow: hidden;
-    
+
     &:hover .characteristics-description {
         left: 0;
     }
@@ -186,7 +187,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        
+
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -194,11 +195,12 @@ html {
         color: white;
         text-transform: uppercase;
     }
+
     & .characteristics-description {
         backdrop-filter: blur(6px);
         position: absolute;
-        top:0;
-        left:-100%;
+        top: 0;
+        left: -100%;
         width: 100%;
         height: 100%;
         transition: 0.6s;
@@ -207,6 +209,113 @@ html {
         justify-content: center;
         padding: 30px;
         color: white;
-        font-size: 20px;;
+        font-size: 20px;
+        ;
     }
+}
+
+/* Days gone World */
+.daysgone-world {
+    background-color: whitesmoke;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/characteristics1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.world-item {
+    width: 500px;
+    /* background-color: #111; */
+    padding: 20px;
+
+    & .world-video {
+        & iframe {
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    & .world-text {
+        color: whitesmoke;
+
+        & h2 {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        & p {
+            font-size: 20px;
+        }
+    }
+}
+
+/* PlayStation Store */
+
+.playstation-store {
+    background-color: whitesmoke;
+    padding: 40px;
+
+    & h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.playstation-store-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.psstore-item {
+    width: 600px;
+    height: 800px;
+    /* border: solid 1px red; */
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & img {
+        width: 100%;
+    }
+
+    & h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    & p {
+        font-size: 30px;
+    }
+
+    & ul {
+        & li {
+            font-size: 20px;
+        }
+    }
+}
+
+& .price {    
+    font-size: 40px;
+}
+
+.cart-button {
+    background-color: orange;
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+
 }
